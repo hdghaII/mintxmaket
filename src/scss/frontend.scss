@@ -1,0 +1,78 @@
+@import "reset";
+
+@import "fonts";
+
+@import "variable";
+
+@import "mixins";
+
+// sections
+
+@import "template-parts/header";
+
+@import "template-parts/main";
+
+@import "template-parts/footer";
+
+// sections
+
+:root {
+    --text-color: #111827;
+    --color-bg: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: var(--color-bg);
+    color: var(--text-color);
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: var(--color-bg);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--color-bg);
+        border-radius: 20px;      
+    }
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+    @include response-min($pc) {
+        max-width: 1440px;
+        padding: 0 28px;
+    }
+}
+
+.page-content {
+    @include response-min($pc) {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 32px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.content {
+    padding: 0 16px;
+    @include response-min($pc) {
+        padding: unset;
+        max-width: 945px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    @include response-min(1360px) {
+        margin: unset;
+    }
+}
