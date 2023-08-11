@@ -1,7 +1,20 @@
+section {
+    background: var(--background-color, #FAFAFA);
+
+
+}
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     &__logo {
         display: flex;
         align-items: center;
@@ -67,26 +80,22 @@
     &__btn--btn {
         display: block;
     }
-    &__button--first {    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--dark-gray, #162329);
-        font-family: 'Gilroy-SemiBold', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        width: 97px;
-        height: 19px;
-    }
-    &__btn--first {
-        padding: 12px 16px;
+    &__btn {
+        width: 129px;
+        height: 43px;
         background: var(--main-green, #38E7BA);
         display: flex;
         border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-gray, #162329);
+        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
     }
-    &__button--second {    
+    &__btn--second {    
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,9 +105,8 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        width: 97px;
-        height: 19px;
-         //i think this is incorrect
+        width: 129px;
+        height: 43px;
     }
     &__btn--second {
         margin-left: 8px;

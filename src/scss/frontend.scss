@@ -45,15 +45,6 @@ img {
     object-fit: contain;
 }
 
-.container {
-    padding: 0 16px;
-    margin: 0 auto;
-    @include response-min($pc) {
-        max-width: 1440px;
-        padding: 0 28px;
-    }
-}
-
 .page-content {
     @include response-min($pc) {
         display: flex;

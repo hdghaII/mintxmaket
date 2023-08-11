@@ -4,9 +4,12 @@
     align-items: center;
 }
 .first {
+    &__wrapper {
+        padding-top: 105px;
+    }
     &__content {
         justify-content: flex-start;
-
+        padding-left: 122px;
     }
     &__title--subheading {
         color: var(--green-for-text, #27BE98);
@@ -25,17 +28,42 @@
         font-style: normal;
         font-weight: 600;
         line-height: 104%;
+        padding-bottom: 64px;
     }
     &__list {
         display: flex;
+        justify-content: space-between;
+        gap: 29px;
+
+    }
+    &__list--line {
+        position: absolute;
+        width: 350px;
+        height: 1px;
+        top: 0;
+        background: rgba(56, 231, 186);
+        top: 10px;
+        left: 15px;
+        z-index: 0;
     }
     &__list--item {
+        z-index: 5;
+        position: relative;
         display: flex;
         flex-direction: column;
-        padding-right: 29px;
         &:last-of-type {
-            padding-right: unset;
+            margin-right: unset;
         }
+        &:nth-of-type(1) {
+            width: 128px;
+        }
+        &:nth-of-type(2) {
+            width: 161px;
+        }
+        &:nth-of-type(3) {
+            width: 135px;
+        }
+
     }
     &__list--text {
         font-family: 'Gilroy-Medium', sans-serif;
@@ -47,10 +75,43 @@
     &__list--img {
         width: 20px;
         height: 20px;
+        margin-bottom: 8px;
+        z-index: 1;
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
+    }
+    &__image {
+        width: 699px;
+        height: 533px;
+        flex-shrink: 0;
+        margin-left: 67px;
+        margin-right: 70px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__btn--btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        background: var(--main-green, #38E7BA);
+        width: 145px;
+        height: 51px;
+        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 64px;
+
+    }
+    &__btn {
+        
     }
 }

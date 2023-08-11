@@ -10,6 +10,7 @@
 
 <body>
     <header class="header">
+    <div class="header__wrapper">
         <div class="header__logo">
             <div class="header__logo--img">
                 <img src="./src/img/logo1.svg" alt="MintX Logo">
@@ -40,7 +41,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="header__burger">
             <div class="header__burger--text">
                 RU
@@ -50,13 +51,10 @@
             </div>
         </div>
         <div class="header__buttons">
-            <a class="first__btn">Регистрация</a>
-            <btn class="header__btn--second">
-                <div class="header__button--second">
-                    Войти
-                </div>
-            </btn>
+            <a href="index.html" class="header__btn">Регистрация</a>
+            <a href="index.html" class="header__btn--second">Войти</a>
         </div>
+    </div>
     </header>
 
     <!-- page content -->
@@ -72,6 +70,7 @@
                     </h1>
                 </div>
                 <div class="first__list">
+
                     <div class="first__list--item">
                         <div class="first__list--img">
                             <img src="./assets/img/checkmark.svg" alt="Checkmark"> 
@@ -79,7 +78,10 @@
                         <div class="first__list--text">
                             Меняй по выгодному курсу
                         </div>
+                        <div class="first__list--line">
+                        </div>
                     </div>
+                    
                     <div class="first__list--item">
                         <div class="first__list--img">
                             <img src="./assets/img/checkmark.svg" alt="Checkmark"> 
@@ -99,9 +101,9 @@
                 </div>
                 <div class="first__button">
                     <btn class="first__btn">
-                        <div class="first__btn--div">
+                        <a class="first__btn--btn">
                             Начать
-                        </div>
+                        </a>
                     </btn>
                 </div>
             </div>
