@@ -545,6 +545,43 @@ section {
   line-height: normal;
   margin-top: 64px;
 }
+
+@media screen and (max-width: 1250px) {
+  .first__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .first__image {
+    width: 480px;
+    height: 400px;
+    margin-right: unset;
+    margin-left: 60px;
+  }
+  .first__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .first__title--subheading {
+    font-size: 12px;
+  }
+  .first__title--heading {
+    font-size: 48px;
+  }
+  .first__list--item:nth-of-type(1) {
+    width: unset;
+  }
+  .first__list--item:nth-of-type(2) {
+    width: unset;
+  }
+  .first__list--item:nth-of-type(3) {
+    width: unset;
+  }
+  .first__content {
+    padding-left: unset;
+  }
+}
 :root {
   --text-color: #111827;
   --color-bg: #fff;
