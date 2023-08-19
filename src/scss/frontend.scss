@@ -6,11 +6,16 @@
 
 @import "mixins";
 
+
 // sections
+
+
 
 @import "template-parts/header";
 
 @import "template-parts/main";
+
+@import "template-parts/info.scss";
 
 @import "template-parts/footer";
 
@@ -26,8 +31,6 @@ body {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 19px;
-    background-color: var(--color-bg);
-    color: var(--text-color);
     &::-webkit-scrollbar {
         width: 8px;
     }
