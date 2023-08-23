@@ -43,6 +43,7 @@
         margin-right: 37px;
     }
     &__item {
+        width: 227px;
         &--heading {
             text-align: center;
             font-family: 'Gilroy-Semibold', sans-serif;
@@ -50,7 +51,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: 104%;
-            width: 227px;
+
             color: #27BE98;
             padding-bottom: 16px;
         }
@@ -62,5 +63,98 @@
             line-height: 20px;
         }
 
+    }
+}
+@media screen and (max-width: 1250px) {
+    .info {
+        &__title {
+            font-size: 48px
+        }
+        &__subtitle {
+            font-size: 24px;
+            width: 800px;
+        }
+        &__item {
+            width: 180px;
+            &--heading {
+                font-size: 32px;
+            }
+            &--subheading {
+                font-size: 14px;
+            }
+        }
+        &__line {
+            margin: 0 20px;
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    .info {
+        &__title {
+            font-size: 32px;
+            
+        }
+        &__subtitle {
+            font-size: 18px;
+            width: 570px;
+        }
+        &__line {
+            height: 60px;
+        }
+        &__item {
+            width: 100px;
+            &--heading {
+                font-size: 20px;
+            }
+            &--subheading {
+                font-size: 10px;
+                line-height: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .info {
+        &__subtitle {
+            width: 370px;
+
+        }
+        &__item {
+            width: 75px;
+            &--subheading {
+                font-size: 8px;
+            }
+            &--heading {
+                font-size: 16px;
+                padding-bottom: 8px;
+            }
+        }
+        &__line {
+            margin: 0 10px;
+            height: 45px;
+        }
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .info {
+        &__subtitle {
+            width: 255px;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        &__item {
+            width: 55px;
+            &--heading {
+                font-size: 10px;
+            }
+            &--subheading {
+                font-size: 6px;
+                line-height: 12px;
+            }
+        }
+        &__line {
+            height: 40px;
+        }
     }
 }
