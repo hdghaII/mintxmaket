@@ -89,9 +89,6 @@
     &__buttons {
         display: flex;
     }
-    &__btn--btn {
-        display: block;
-    }
     &__btn {
         width: 129px;
         height: 43px;
@@ -106,25 +103,32 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
+        &--btn {
+            display: block;
+        }
     }
-    &__btn--second {    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--dark-gray, #162329);
-        font-family: 'Gilroy-SemiBold', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        width: 129px;
-        height: 43px;
+    &__btn {    
+        &--second {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gray, #162329);
+            font-family: 'Gilroy-SemiBold', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 129px;
+            height: 43px;
+        }
     }
-    &__btn--second {
-        margin-left: 8px;
-        border: 1px solid var(--dark-gray, #162329);
-        display: flex;
-        border-radius: 3px;
+    &__btn {
+        &--second {
+            margin-left: 8px;
+            border: 1px solid var(--dark-gray, #162329);
+            display: flex;
+            border-radius: 3px;
+        }
     }
     &__burger {
         display: flex;
