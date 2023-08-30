@@ -154,6 +154,9 @@ body {
             }
         }
         &__list {
+            &::after {
+                width: calc(100% - 120px);
+            }
             &--item:nth-of-type(1) {
                 width: unset;
             }
@@ -173,6 +176,11 @@ body {
     .first {
         &__wrapper {
             flex-direction: column;
+        }
+        &__title {
+            &--heading {
+                font-size: 32px;
+            }
         }
         &__content {
             display: flex;

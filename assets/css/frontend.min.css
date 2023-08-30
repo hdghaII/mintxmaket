@@ -307,6 +307,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .header__logo {
   display: flex;
@@ -448,10 +450,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 1250px) {
-  .header {
+  .header__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+  .header__burger {
+    margin-left: auto;
   }
   .header__logo {
     padding-right: 15px;
@@ -671,6 +676,9 @@ body {
   .first__title--heading {
     font-size: 48px;
   }
+  .first__list::after {
+    width: calc(100% - 120px);
+  }
   .first__list--item:nth-of-type(1) {
     width: unset;
   }
@@ -687,6 +695,9 @@ body {
 @media screen and (max-width: 800px) {
   .first__wrapper {
     flex-direction: column;
+  }
+  .first__title--heading {
+    font-size: 32px;
   }
   .first__content {
     display: flex;
@@ -807,7 +818,7 @@ body {
     padding-bottom: 20px;
   }
   .info__subtitle {
-    font-size: 18px;
+    font-size: 16px;
     width: 570px;
     line-height: 24px;
   }
@@ -842,7 +853,7 @@ body {
     width: 120px;
   }
   .info__item--subheading {
-    font-size: 12px;
+    font-size: 16px;
   }
   .info__item--heading {
     font-size: 16px;
@@ -863,7 +874,7 @@ body {
   }
   .info__subtitle {
     width: 255px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     padding-bottom: 35px;
   }
@@ -874,7 +885,7 @@ body {
     font-size: 18px;
   }
   .info__item--subheading {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 12px;
   }
   .info__line {
@@ -903,21 +914,77 @@ body {
 }
 .whyus__wrapper {
   flex-direction: column;
+}
+.whyus__content {
+  display: flex;
   position: relative;
+  width: 100%;
+  justify-content: center;
 }
 .whyus__left {
   display: flex;
   position: absolute;
   flex-direction: column;
+  top: 0;
+  left: 0;
+}
+.whyus__left--item {
+  display: flex;
+  align-items: center;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 32px;
+}
+.whyus__left--item:last-of-type {
+  padding-bottom: unset !important;
+}
+.whyus__left--item:nth-of-type(1) {
+  margin-left: 75px;
+}
+.whyus__left--item:nth-of-type(2) {
+  margin-left: 30px;
+}
+.whyus__left--item:nth-of-type(4) {
+  margin-left: 30px;
+}
+.whyus__left--item:nth-of-type(5) {
+  margin-left: 75px;
 }
 .whyus__right {
   display: flex;
   position: absolute;
   flex-direction: column;
+  top: 0;
+  right: 0;
+}
+.whyus__right--item {
+  display: flex;
+  align-items: center;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 32px;
+}
+.whyus__right--item:last-of-type {
+  padding-bottom: unset;
+}
+.whyus__right--item:nth-of-type(2) {
+  margin-left: 30px;
+}
+.whyus__right--item:nth-of-type(3) {
+  margin-left: 70px;
+}
+.whyus__right--item:nth-of-type(4) {
+  margin-left: 30px;
 }
 .whyus__img {
-  width: 100%;
-  height: 600px;
+  width: 464px;
+  height: 398px;
 }
 .whyus__img img {
   width: 100%;
@@ -936,17 +1003,45 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.whyus__img--item {
+.whyus__btn {
   display: flex;
+  width: 145px;
+  height: 51px;
+  justify-content: center;
   align-items: center;
-  font-family: "Gilroy-Medium", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  padding-bottom: 32px;
+  text-align: center;
+  font-family: "Gilroy-Semibold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  background: var(--main-green, #38E7BA);
+  margin-top: 90px;
 }
 
+@media screen and (max-width: 1250px) {
+  .whyus__heading {
+    font-size: 12px;
+  }
+  .whyus__subheading {
+    font-size: 48px;
+  }
+  .whyus__img {
+    width: 300px;
+    height: 250px;
+  }
+  .whyus__img--img {
+    width: 32px;
+    height: 32px;
+  }
+  .whyus__left--item {
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+  .whyus__right--item {
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
 :root {
   --text-color: #111827;
   --color-bg: #fff;
