@@ -631,6 +631,18 @@ body {
   height: 533px;
   flex-shrink: 0;
   margin-left: 67px;
+  position: relative;
+}
+.first__image::after {
+  content: "";
+  background-image: url(../img/main__ellipse.png);
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  left: -20px;
+  top: -50px;
 }
 .first__image img {
   width: 100%;
