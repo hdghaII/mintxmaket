@@ -1,0 +1,95 @@
+.exchange {
+    &__wrapper {
+        max-width: 1200px;
+        flex-direction: column;
+    }
+    &__heading {
+        color: #27BE98;
+        text-align: center;
+        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+    }
+    &__subheading {
+        color: #162329;
+        text-align: center;
+        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 104%;
+        padding-bottom: 72px;
+    }
+    &__first {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 32px;
+        border-radius: 3px;
+        background: #FFF;
+        &--title {
+            font-family: 'Gilroy-Medium', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: normal;
+            color: var(--Dark-Gray, #162329);
+            text-align: center;
+            padding-bottom: 27px;
+        }
+        &--buttons {
+            display: flex;
+            gap: 8px;
+        }
+        &--btn {
+            display: flex;
+            width: 68px;
+            height: 35px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 3px;
+            border: 1px solid #ECECF1;
+        }
+        &--search {
+            display: flex;
+            padding: 16px 16px;
+            padding-left: 40px;
+            background: transparent url(../img/search__icon.svg) no-repeat 14px center;
+            align-items: center;
+            width: 220px;
+            border-radius: 3px;
+            border: 0;
+            margin: 16px 0;
+        }
+        &--item {
+            display: flex;
+            align-items: center;
+            width: 220px;
+            padding: 16px;
+            margin-bottom: 8px;
+            border-radius: 3px;
+            border: 1px solid #ECECF1;
+        }
+        &--item:last-of-type {
+            margin-bottom: unset;
+        }
+        &--logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &--text {
+            color: #000002;
+            font-family: 'Gilroy-Medium', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    } 
+
+}
