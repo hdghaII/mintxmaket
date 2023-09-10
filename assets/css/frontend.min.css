@@ -1250,6 +1250,7 @@ body {
 }
 .exchange__content {
   display: flex;
+  gap: 20px;
 }
 .exchange__heading {
   color: #27BE98;
@@ -1434,6 +1435,70 @@ body {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 12px;
   font-weight: 500;
+}
+.exchange__third--title {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--Dark-Gray, #162329);
+  text-align: center;
+  padding-bottom: 27px;
+}
+.exchange__third--list {
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 70px 32px;
+  gap: 4px;
+}
+.exchange__third--item {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #ECECF1;
+  gap: 8px;
+}
+.exchange__third--text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.exchange__third--logo {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.exchange__third--heading {
+  color: #000002;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.exchange__third--subheading {
+  color: rgba(0, 0, 2, 0.4);
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.exchange__third--first {
+  width: 218px;
+  gap: 8px;
+  padding: 16px 16px;
+  display: flex;
+  height: 73px;
+}
+.exchange__third--arrow {
+  width: 24px;
+  height: 24px;
+}
+.exchange__third--time {
+  color: rgba(0, 0, 2, 0.4);
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 16px;
 }
 
 :root {
