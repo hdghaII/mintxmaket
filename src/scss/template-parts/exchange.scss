@@ -207,7 +207,7 @@
             background: #FFF;
             display: flex;
             flex-direction: column;
-            padding: 32px 32px 70px 32px; 
+            padding: 32px 32px 72px 32px; 
             gap: 4px;
         }
         &--item {
@@ -216,6 +216,7 @@
             border-radius: 3px;
             border: 1px solid #ECECF1;
             gap: 8px;
+            height: 73px;
 
         }
         &--text {
@@ -258,6 +259,19 @@
             font-size: 14px;
             font-weight: 500; 
             padding-right: 16px;
+        }
+    }
+}
+@media screen and (max-width: 1250px) {
+    .exchange {
+        &__heading {
+            font-size: 12px;
+        }
+        &__subheading {
+            font-size: 48px;
+        }
+        &__content {
+            
         }
     }
 }

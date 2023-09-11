@@ -1449,7 +1449,7 @@ body {
   background: #FFF;
   display: flex;
   flex-direction: column;
-  padding: 32px 32px 70px 32px;
+  padding: 32px 32px 72px 32px;
   gap: 4px;
 }
 .exchange__third--item {
@@ -1458,6 +1458,7 @@ body {
   border-radius: 3px;
   border: 1px solid #ECECF1;
   gap: 8px;
+  height: 73px;
 }
 .exchange__third--text {
   display: flex;
@@ -1501,6 +1502,14 @@ body {
   padding-right: 16px;
 }
 
+@media screen and (max-width: 1250px) {
+  .exchange__heading {
+    font-size: 12px;
+  }
+  .exchange__subheading {
+    font-size: 48px;
+  }
+}
 :root {
   --text-color: #111827;
   --color-bg: #fff;
