@@ -1,6 +1,7 @@
 .plan {
     &__wrapper {
         flex-direction: column;
+        padding-bottom: 130px;
     }
     &__heading {
         color: #27BE98;
@@ -99,6 +100,9 @@
 }   
 @media screen and (max-width: 800px) {
     .plan {
+        &__wrapper {
+            padding-bottom: 75px;
+        }
         &__content {
             display: grid;
             grid-template-columns: 1fr 1fr;

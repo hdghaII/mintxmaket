@@ -1699,6 +1699,7 @@ body {
 }
 .plan__wrapper {
   flex-direction: column;
+  padding-bottom: 130px;
 }
 .plan__heading {
   color: #27BE98;
@@ -1793,6 +1794,9 @@ body {
   }
 }
 @media screen and (max-width: 800px) {
+  .plan__wrapper {
+    padding-bottom: 75px;
+  }
   .plan__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
