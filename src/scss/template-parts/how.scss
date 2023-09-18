@@ -1,6 +1,7 @@
 .how {
     &__wrapper {
         flex-direction: column;
+        padding-bottom: 105px;
     }
     &__list {
         display: grid;
@@ -39,6 +40,7 @@
         padding-bottom: 48px;
         padding-top: 66px;
         text-align: center;
+        border-radius: 3px;
         &--number {
             position: absolute;
             top: -18px;
@@ -60,6 +62,18 @@
             width: 81px;
             height: 81px;
             margin-bottom: 43px;
+            position: relative;
+            z-index: 2;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 250%;
+                height: 250%;
+                z-index: -1;
+                background-image: url(../../assets/img/how__gradient.png);
+                top: -70px;
+                left: -70px;
+            }
         }
         &--title {
             color: var(--Dark-Gray, #162329);
@@ -122,9 +136,6 @@
         }
         &__item {
             padding-top: 24px;
-            &--img {
-                display: none;
-            }
         }
     }
 }

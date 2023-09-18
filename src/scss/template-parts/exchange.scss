@@ -2,6 +2,23 @@
     &__wrapper {
         max-width: 1200px;
         flex-direction: column;
+        padding-bottom: 130px;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        background: var(--main-green, #38E7BA);
+        width: 145px;
+        height: 51px;
+        font-family: "Gilroy-SemiBold", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 64px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__content {
         display: flex;
@@ -111,6 +128,10 @@
 
     }
     &__second {
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        align-items: center;
         &--title {
             font-family: 'Gilroy-Medium', sans-serif;
             font-size: 20px;
@@ -194,6 +215,10 @@
         }
     }
     &__third {
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        align-items: center;
         &--title {
             font-family: 'Gilroy-Medium', sans-serif;
             font-size: 20px;
@@ -269,6 +294,97 @@
         }
         &__subheading {
             font-size: 48px;
+        }
+        &__content {
+            display: grid;
+            grid-auto-columns: 1fr 1fr;
+        }
+        &__first {
+            grid-column: 1;
+        }
+        &__second {
+            grid-column: 2;
+        }
+        &__third {
+            grid-column: span 2;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .exchange {
+        &__wrapper {
+            padding-bottom: 75px;
+        }
+        &__subheading {
+            font-size: 32px;
+        }
+        &__first {
+            height: 585px;
+            overflow: hidden;
+            &--list {
+                overflow: scroll;
+                padding: 16px 16px;
+            }
+            
+        }
+        &__second {
+            height: 585px;
+            overflow: hidden;
+            &--list {
+                overflow: scroll;
+                padding: 16px 16px;
+            }
+
+        }
+        &__third {
+            &--list {
+                padding: 16px 16px;
+            }
+        }
+        
+    }
+
+}
+@media screen and (max-width: 560px) {
+    .exchange {
+        &__content {
+            grid-auto-columns: unset;
+            grid-template-columns: 1fr;
+        }
+        &__first {
+            height: 250px;
+        }
+        &__second {
+            height: 250px;
+            grid-column: 1;
+        }
+        &__third {
+            &--list {
+                padding: 8px 8px;
+            }
+            &--item {
+                gap: 2px;
+            }
+            &--first {
+                width: 120px;
+                gap: 2px;
+                padding: 4px 4px;
+                height: unset;
+            }
+            &--heading {
+                font-size: 12px;
+            }
+            &--time {
+                padding-right: 4px;
+                font-size: 12px;
+            }
+            &--text {
+                gap: 0;
+            }
+            &--arrow {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
