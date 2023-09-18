@@ -1868,12 +1868,22 @@ body {
   display: flex;
   padding: 32px 32px 32px 0px;
   border-top: 1px solid #ECECF1;
+  flex-direction: column;
 }
 .faq__item--heading {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 588px;
+}
+.faq__item--subheading {
+  display: none;
+  max-width: 588px;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 .faq__item--title {
   font-family: "Gilroy-Medium", sans-serif;

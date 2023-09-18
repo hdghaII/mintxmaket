@@ -1,5 +1,6 @@
 {
     "/assets/js/frontend.min.js": "/assets/js/frontend.min.js",
+    "/assets/css/frontend.min.css": "/assets/css/frontend.min.css",
     "/assets/fonts/Gilroy-Medium.eot": "/assets/fonts/Gilroy-Medium.eot",
     "/assets/fonts/Gilroy-Medium.ttf": "/assets/fonts/Gilroy-Medium.ttf",
     "/assets/fonts/Gilroy-Medium.woff": "/assets/fonts/Gilroy-Medium.woff",
@@ -61,6 +62,5 @@
     "/assets/img/whyusicon.png": "/assets/img/whyusicon.png",
     "/assets/img/whyusicon.svg": "/assets/img/whyusicon.svg",
     "/assets/img/whyusimg.png": "/assets/img/whyusimg.png",
-    "/assets/img/whyus__gradient.png": "/assets/img/whyus__gradient.png",
-    "/assets/css/frontend.min.css": "/assets/css/frontend.min.css"
+    "/assets/img/whyus__gradient.png": "/assets/img/whyus__gradient.png"
 }
