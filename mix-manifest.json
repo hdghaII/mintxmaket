@@ -1,5 +1,6 @@
 {
     "/assets/js/frontend.min.js": "/assets/js/frontend.min.js",
+    "/assets/css/frontend.min.css": "/assets/css/frontend.min.css",
     "/assets/fonts/Gilroy-Medium.eot": "/assets/fonts/Gilroy-Medium.eot",
     "/assets/fonts/Gilroy-Medium.ttf": "/assets/fonts/Gilroy-Medium.ttf",
     "/assets/fonts/Gilroy-Medium.woff": "/assets/fonts/Gilroy-Medium.woff",
@@ -45,10 +46,17 @@
     "/assets/img/how__img4.jpg": "/assets/img/how__img4.jpg",
     "/assets/img/how__img4.png": "/assets/img/how__img4.png",
     "/assets/img/invite.png": "/assets/img/invite.png",
+    "/assets/img/invite__arrow.png": "/assets/img/invite__arrow.png",
+    "/assets/img/invite__gradient.png": "/assets/img/invite__gradient.png",
+    "/assets/img/invite__gradient2.png": "/assets/img/invite__gradient2.png",
     "/assets/img/logo 1.png": "/assets/img/logo 1.png",
     "/assets/img/logo1.png": "/assets/img/logo1.png",
     "/assets/img/logo1.svg": "/assets/img/logo1.svg",
     "/assets/img/main__ellipse.png": "/assets/img/main__ellipse.png",
+    "/assets/img/partners__1.svg": "/assets/img/partners__1.svg",
+    "/assets/img/partners__2.svg": "/assets/img/partners__2.svg",
+    "/assets/img/partners__3.svg": "/assets/img/partners__3.svg",
+    "/assets/img/partners__arrow.svg": "/assets/img/partners__arrow.svg",
     "/assets/img/phoneimg.png": "/assets/img/phoneimg.png",
     "/assets/img/plan__comingsoon.png": "/assets/img/plan__comingsoon.png",
     "/assets/img/plan__first.png": "/assets/img/plan__first.png",
@@ -62,6 +70,5 @@
     "/assets/img/whyusicon.png": "/assets/img/whyusicon.png",
     "/assets/img/whyusicon.svg": "/assets/img/whyusicon.svg",
     "/assets/img/whyusimg.png": "/assets/img/whyusimg.png",
-    "/assets/img/whyus__gradient.png": "/assets/img/whyus__gradient.png",
-    "/assets/css/frontend.min.css": "/assets/css/frontend.min.css"
+    "/assets/img/whyus__gradient.png": "/assets/img/whyus__gradient.png"
 }

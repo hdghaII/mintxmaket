@@ -45,12 +45,42 @@
         font-weight: 600;
         width: 145px;
         height: 51px;
+
         &:hover {
             cursor: pointer;
         }
     }
     &__image {
         width: 100%;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../img/invite__gradient.png);
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            top: 100px;
+            z-index: -1;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &::before {
+            content: '';
+            background-image: url(../img/invite__gradient2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            width: 130%;
+            height: 110%;
+            overflow: hidden;
+            left: -100px;
+            top: -10px;
+        }
     }
 }
 @media screen and (max-width: 1250px) {
@@ -82,6 +112,15 @@
         }
         &__content {
             align-items: center;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .invite {
+        &__image {
+            &::after {
+                top: 60px;
+            }   
         }
     }
 }
