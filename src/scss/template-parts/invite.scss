@@ -2,6 +2,7 @@
     &__wrapper {
         display: flex;
         gap: 105px;
+        padding-bottom: 134px;
     }
     &__content {
         display: flex;
@@ -120,7 +121,10 @@
         &__image {
             &::after {
                 top: 60px;
-            }   
+            }
+            &::before {
+                left: -60px;
+            }
         }
     }
 }

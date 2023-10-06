@@ -1,6 +1,7 @@
 .faq {
     &__wrapper {
         flex-direction: column;
+        padding-bottom: 166px;
     }
     &__heading {
         color: #27BE98;
@@ -115,6 +116,11 @@
         }
         &__image {
             width: 70%;
+        }
+        &__item {
+            &--button {
+                margin-left: 2px;
+            }
         }
     }
 }
