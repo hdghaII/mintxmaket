@@ -24,16 +24,16 @@
         <div class="header__content">
             <ul class="header__list">
             <li class="header__text">
-                <a href="index.html">О нас</a>
+                <a href="#info">О нас</a>
             </li>
             <li class="header__text">
-                <a href="index.html">Почему мы</a>
+                <a href="#whyus">Почему мы</a>
             </li>
             <li class="header__text">
-                <a href="index.html">Как это работает</a>
+                <a href="#how">Как это работает</a>
             </li>
             <li class="header__text">
-                <a href="index.html">Ввод/Вывод средств</a>
+                <a href="#exchange">Ввод/Вывод средств</a>
             </li>
         </ul>
             <div class="header__theme">
@@ -41,7 +41,7 @@
                     Light
                 </div>
                 <div class="header__theme--icon">
-                    <img src="./assets/img/theme.svg" alt="Light/Dark Theme">
+                    <img id="header__theme" src="./assets/img/theme__light.svg" alt="Light/Dark Theme">
                 </div>
             </div>
         </div>
@@ -53,16 +53,41 @@
             <div class="header__lang--icon">
                 <img src="./assets/img/burger_down.svg" alt="arrow">
             </div>
+            <div class="header__lang--menu">
+                <div class="header__lang--item">
+                    EN
+                </div>
+            </div>
         </div>
         <div class="header__buttons">
             <a href="index.html" class="header__btn">Регистрация</a>
             <a href="index.html" class="header__btn--second">Войти</a>
         </div>
-        <div class="header__burger">
+        <div class="header__burger--wrapper">
+            <div class="header__burger">
+            </div>
         </div>
+
     </div>
     </header>
-
+    <nav class="menu">
+        <nav class="menu__list">
+            <ul>
+                <li class="menu__list--item"><a href="index.html">О нас</a></li>
+                <li class="menu__list--item"><a href="index.html">Почему мы</a></li>
+                <li class="menu__list--item"><a href="index.html">Как это работает</a></li>
+                <li class="menu__list--item"><a href="index.html">Ввод/Вывод средств</a></li>
+            </ul>
+        </nav>
+        <div class="menu__buttons">
+            <a href="index.html" class="menu__buttons--first">
+                Регистрация
+            </a>
+            <a href="index.html" class="menu__buttons--second">
+                Войти
+            </a>
+        </div>
+    </nav>
     <!-- page content -->
     <section class="first">
         <div class="first__wrapper container">
@@ -109,7 +134,7 @@
             </div>
         </div>
     </section> 
-    <section class="info">
+    <section class="info" id="info">
         <div class="info__wrapper container">
             <div class="info__title">
                 “
@@ -164,7 +189,7 @@ MintExchange предлагает удобное решение для обме�
 
         </div>
     </section>
-    <section class="whyus"> 
+    <section class="whyus" id="whyus"> 
         <div class="whyus__wrapper container">
             <div class="whyus__heading">
                 Мы лучшие в своём деле
@@ -245,7 +270,7 @@ MintExchange предлагает удобное решение для обме�
 
         </div>
     </section>
-    <section class="how">
+    <section class="how" id="how">
         <div class="how__wrapper container">
             <div class="how__heading">
                 Последовательность
@@ -313,7 +338,7 @@ MintExchange предлагает удобное решение для обме�
             </div>
         </div>
     </section>
-    <section class="exchange">
+    <section class="exchange" id="exchange">
         <div class="exchange__wrapper container">
             <div class="exchange__heading">
                 Попробуйте
@@ -328,13 +353,13 @@ MintExchange предлагает удобное решение для обме�
                     </div>
                     <div class="exchange__first--list">
                         <div class="exchange__first--buttons">
-                            <div class="exchange__first--btn">
+                            <div class="exchange__first--btn" id="exchange__button">
                                 Все
                             </div>
-                            <div class="exchange__first--btn">
+                            <div class="exchange__first--btn" id="exchange__button">
                                 ₿
                             </div>
-                            <div class="exchange__first--btn">
+                            <div class="exchange__first--btn" id="exchange__button">
                                 ₽
                             </div>
                         </div>
@@ -421,13 +446,13 @@ MintExchange предлагает удобное решение для обме�
                     </div>
                     <div class="exchange__second--list">
                         <div class="exchange__second--buttons">
-                            <div class="exchange__second--btn">
+                            <div class="exchange__second--btn" id="exchange__button">
                                 Все
                             </div>
-                            <div class="exchange__second--btn">
+                            <div class="exchange__second--btn" id="exchange__button">
                                 ₿
                             </div>
-                            <div class="exchange__second--btn">
+                            <div class="exchange__second--btn" id="exchange__button">
                                 ₽
                             </div>
                         </div>
@@ -843,13 +868,18 @@ MintExchange предлагает удобное решение для обме�
                 <div class="plan__item">
                     <div class="plan__item--img">
                         <img src="assets/img/plan__third.png" alt="cash">
-                        <div class="plan__item--comingsoon">
-                            <img src="assets/img/plan__comingsoon.png" alt="Coming soon!">
-                        </div>
                     </div>
                     <div class="plan__item--text">
                         Выводите средства, пополняйте криптокошельки с помощью наших <span>банкоматов</span>
-                    </div>  
+                    </div> 
+                    <div class="plan__comingsoon">
+                        <div class="plan__comingsoon--img">
+                            <img src="assets/img/plan__comingsoon.svg" alt="Coming soon!">
+                        </div>
+                        <div class="plan__comingsoon--text">
+                            Сoming soon...
+                        </div>
+                    </div> 
                 </div>
                 <div class="plan__item">
                     <div class="plan__item--img">
@@ -880,62 +910,62 @@ MintExchange предлагает удобное решение для обме�
                 </div>
                 <div class="faq__list">
                     <div class="faq__item">
-                        <div class="faq__item--heading">
+                        <div class="faq__item--content">
                             <div class="faq__item--title">
                                 Какие валюты поддерживает Mintxchange?
                             </div>
-                            <div class="faq__item--button">
-                                <img src="assets/img/faq__plus.svg" src="More Info">
+                            <div class="faq__item--subheading">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
                             </div>
                         </div>
-                        <div class="faq__item--subheading">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
+                        <div class="faq__item--button">
+                            + 
                         </div>
                     </div>
                     <div class="faq__item">
-                        <div class="faq__item--heading">
+                        <div class="faq__item--content">
                             <div class="faq__item--title">
                                 Какие гарантии безопасности вы даёте?
                             </div>
-                            <div class="faq__item--button">
-                                <img src="assets/img/faq__plus.svg" src="More Info">
+                            <div class="faq__item--subheading">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
                             </div>
                         </div>
-                        <div class="faq__item--subheading">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
+                        <div class="faq__item--button">
+                            + 
                         </div>
                     </div>
                     <div class="faq__item">
-                        <div class="faq__item--heading">
+                        <div class="faq__item--content">
                             <div class="faq__item--title">
                                 Сколько времени занимает процес верификации личности?
                             </div>
-                            <div class="faq__item--button">
-                                <img src="assets/img/faq__plus.svg" src="More Info">
+                            <div class="faq__item--subheading">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
                             </div>
                         </div>
-                        <div class="faq__item--subheading">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
+                        <div class="faq__item--button">
+                            + 
                         </div>
                     </div>
                     <div class="faq__item">
-                        <div class="faq__item--heading">
+                        <div class="faq__item--content">
                             <div class="faq__item--title">
                                 Какую сумму я могу обменять за один раз?
                             </div>
-                            <div class="faq__item--button">
-                                <img src="assets/img/faq__plus.svg" src="More Info">
+                            <div class="faq__item--subheading">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
                             </div>
                         </div>
-                        <div class="faq__item--subheading">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ornare quam commodo magna. Convallis ullamcorper nulla nibh et turpis suspendisse aliquam. Quam massa cursus scelerisque fringilla quam quisque nunc. Hac tempor cursus maecenas in suscipit. Donec aliquet elit, in nulla risus in eget ac. Aliquam odio accumsan non libero, sagittis, nibh morbi.
-                        </div>
+                        <div class="faq__item--button">
+                            + 
+                        </div>  
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="invite">
+    <section class="invite" >
         <div class="invite__wrapper container">
             <div class="invite__content">
                 <div class="invite__heading">

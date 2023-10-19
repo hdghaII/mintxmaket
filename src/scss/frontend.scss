@@ -40,6 +40,10 @@
     --color-bg: #fff;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     font-family: sans-serif;

@@ -1,9 +1,6 @@
 .info {
     &__wrapper {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding-bottom: 133px;
     }
     &__title {
@@ -13,7 +10,6 @@
         text-align: center;
         font-family: 'Gilroy-Semibold', sans-serif;
         font-size: 64px;
-        font-style: normal;
         font-weight: 600;
         line-height: 64%;
     }
@@ -24,7 +20,6 @@
         font-family: 'Gilroy-Regular', sans-serif;
         width: 825px;
         font-size: 32px;
-        font-style: normal;
         font-weight: 400;
         line-height: 42px;
         padding-bottom: 64px;
@@ -49,17 +44,14 @@
             text-align: center;
             font-family: 'Gilroy-Semibold', sans-serif;
             font-size: 48px;
-            font-style: normal;
             font-weight: 600;
             line-height: 104%;
-
             color: #27BE98;
             padding-bottom: 16px;
         }
         &--subheading {
             font-family: 'Gilroy-Medium', sans-serif;
             font-size: 16px;
-            font-style: normal;
             font-weight: 500;
             line-height: 20px;
         }

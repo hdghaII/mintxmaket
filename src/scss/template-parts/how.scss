@@ -74,20 +74,19 @@
                 background-image: url(../../assets/img/how__gradient.png);
                 top: -70px;
                 left: -70px;
+                pointer-events: none;
             }
         }
         &--title {
-            color: var(--Dark-Gray, #162329);
+            color: #162329;
             text-align: center;
             font-family: 'Gilroy-Medium', sans-serif;
             font-size: 20px;
-            font-style: normal;
             font-weight: 500;
-            line-height: normal;
             padding-bottom: 16px;
         }
         &--subtitle {
-            color: var(--Dark-Gray, #162329);
+            color: #162329;
             text-align: center;
             font-family: 'Gilroy-Regular', sans-serif;
             font-size: 16px;
@@ -120,13 +119,14 @@
             font-size: 32px;
         }
         &__list {
-            grid-template-columns: 180px 180px;
+            grid-template-columns: 1fr 1fr;
             row-gap: 20px;
             column-gap: 15px;
             padding: 0 auto;
         }
         &__item {
             padding-top: 40px;
+            width: 100%;
         }
     }
 }

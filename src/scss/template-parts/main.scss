@@ -1,5 +1,5 @@
 body {
-    background: var(--Background-color, #FAFAFA);
+    background: #FAFAFA;
     overflow-x: hidden;
 }
 html {
@@ -22,12 +22,10 @@ html {
     }
     &__title {
         &--subheading {
-            color: var(--green-for-text, #27BE98);
+            color: #27BE98;
             font-family: 'Gilroy-SemiBold', sans-serif;
             font-size: 16px;
-            font-style: normal;
             font-weight: 600;
-            line-height: normal;
             letter-spacing: 1.28px;
             text-transform: uppercase;
             padding-bottom: 24px;
@@ -35,7 +33,6 @@ html {
         &--heading {
             font-family: 'Gilroy-SemiBold', sans-serif;
             font-size: 64px;
-            font-style: normal;
             font-weight: 600;
             line-height: 104%;
             padding-bottom: 64px;
@@ -57,10 +54,11 @@ html {
             top: 10px;
             left: 15px;
             z-index: 1;
+            
         }
         &--item {
             position: relative;
-            z-index: 5;
+            z-index: 3;
             display: flex;
             flex-direction: column;
             &:last-of-type {
@@ -79,7 +77,6 @@ html {
         &--text {
             font-family: 'Gilroy-Medium', sans-serif;
             font-size: 16px;
-            font-style: normal;
             font-weight: 500;
             line-height: 20px;
         }   
@@ -92,9 +89,6 @@ html {
             background-color: #fff;
             border-radius: 50%;
             overflow: hidden;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
         }
     }
     &__image {
@@ -103,11 +97,6 @@ html {
         flex-shrink: 0;
         margin-left: 67px;
         position: relative;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
     }
     &__btn {
         &--btn {
@@ -115,14 +104,12 @@ html {
             justify-content: center;
             align-items: center;
             border-radius: 3px;
-            background: var(--main-green, #38E7BA);
+            background: #38E7BA;
             width: 145px;
             height: 51px;
             font-family: 'Gilroy-SemiBold', sans-serif;
             font-size: 16px;
-            font-style: normal;
             font-weight: 600;
-            line-height: normal;
             margin-top: 64px;
             &:hover {
                 cursor: pointer;
