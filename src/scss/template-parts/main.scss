@@ -112,6 +112,8 @@ html {
             font-weight: 600;
             margin-top: 64px;
             &:hover {
+                border: 1px solid #38E7BA;
+                background: #FFF;
                 cursor: pointer;
             }
         }

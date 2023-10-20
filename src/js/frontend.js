@@ -39,7 +39,7 @@ $('.faq__item--button').on('click', function() {
     $(this).html('+');
   }
 });
-  $('.header__lang--icon').on('click', function() { 
+  $('.header__lang').on('click', function() { 
     if( !$('.header__lang').hasClass('active') ) {
       $('.header__lang').addClass('active');
 
@@ -49,8 +49,8 @@ $('.faq__item--button').on('click', function() {
     }
   });
   $('.exchange__first--item').on('click', function() {
-    $('.exchange__first--item').removeClass('active');
     if( !$(this).hasClass('active') ) {
+      $('.exchange__first--item').removeClass('active');
        $(this).addClass('active');
     } else {
       $(this).removeClass('active');
@@ -71,8 +71,8 @@ $('.faq__item--button').on('click', function() {
   });
   
   $('.exchange__second--item').on('click', function() {
-    $('.exchange__second--item').removeClass('active')
     if( !$(this).hasClass('active') ) {
+      $('.exchange__second--item').removeClass('active')
        $(this).addClass('active');
     } else {
       $(this).removeClass('active');

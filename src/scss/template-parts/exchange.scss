@@ -17,7 +17,8 @@
         font-weight: 600;
         margin-top: 64px;
         &:hover {
-            cursor: pointer;
+            border: 1px solid #38E7BA;
+            background: #FFF;
         }
     }
     &__content {
@@ -368,15 +369,17 @@
 @media screen and (max-width: 560px) {
     .exchange {
         &__content {
-            grid-auto-columns: unset;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
         }
         &__first {
             height: 250px;
+            align-items: unset;
         }
         &__second {
             height: 250px;
-            grid-column: 1;
+            align-items: unset;
+
         }
         &__third {
             &--list {

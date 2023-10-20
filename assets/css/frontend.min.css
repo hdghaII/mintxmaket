@@ -389,6 +389,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-weight: 600;
 }
+.header__btn:hover {
+  border: 1px solid #38E7BA;
+  background: #FFF;
+}
 .header__btn--btn {
   display: block;
 }
@@ -416,13 +420,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   z-index: 5;
+  position: relative;
 }
 .header__lang.active .header__lang--icon {
   transition: all 0.3s ease-in;
   transform: rotate(180deg);
 }
 .header__lang.active .header__lang--menu {
-  display: block;
+  display: flex;
   z-index: 5;
 }
 .header__lang--text {
@@ -434,17 +439,23 @@ h1, h2, h3, h4, h5, h6 {
 .header__lang--icon {
   width: 20px;
   height: 20px;
+  transition: all 0.3s ease-in;
 }
 .header__lang--menu {
   display: none;
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5px;
+  border-radius: 6px;
   position: absolute;
   background: #FFF;
-  top: 50px;
-  width: 37.7px;
-  height: 40px;
+  top: 20px;
+  width: 37px;
+  height: 20px;
+  left: -5px;
 }
 .header__lang--item {
   color: #000002;
@@ -506,6 +517,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
   background: #38E7BA;
 }
+.menu__buttons--first:hover {
+  border: 1px solid #38E7BA;
+  background: #FFF;
+}
 .menu__buttons--second {
   display: flex;
   align-items: center;
@@ -523,6 +538,10 @@ h1, h2, h3, h4, h5, h6 {
   gap: 4px;
   border-radius: 3px;
   border: 1px solid #162329;
+}
+.menu__buttons--second:hover {
+  border: 1px solid #38E7BA;
+  background: #FFF;
 }
 
 @media screen and (max-width: 1250px) {
@@ -778,6 +797,8 @@ html {
   margin-top: 64px;
 }
 .first__btn--btn:hover {
+  border: 1px solid #38E7BA;
+  background: #FFF;
   cursor: pointer;
 }
 
@@ -1131,7 +1152,7 @@ html {
     gap: 16px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .footer__content {
     flex-direction: column;
     text-align: center;
@@ -1261,6 +1282,10 @@ html {
   border-radius: 3px;
   background: #38E7BA;
   margin-top: 90px;
+}
+.whyus__btn:hover {
+  border: 1px solid #38E7BA;
+  background: #FFF;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1508,7 +1533,8 @@ html {
   margin-top: 64px;
 }
 .exchange__button:hover {
-  cursor: pointer;
+  border: 1px solid #38E7BA;
+  background: #FFF;
 }
 .exchange__content {
   display: flex;
@@ -1845,15 +1871,16 @@ html {
 }
 @media screen and (max-width: 560px) {
   .exchange__content {
-    grid-auto-columns: unset;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .exchange__first {
     height: 250px;
+    align-items: unset;
   }
   .exchange__second {
     height: 250px;
-    grid-column: 1;
+    align-items: unset;
   }
   .exchange__third--list {
     padding: 8px 8px;
@@ -2035,7 +2062,7 @@ html {
   .plan__content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 35px;
   }
   .plan__item {
     padding: 30px 16px 24px 16px;
@@ -2044,9 +2071,9 @@ html {
     bottom: 50%;
     top: unset;
     transform: unset;
-    transform: translateY(190%);
-    left: 0;
+    transform: translateY(195%);
     right: unset;
+    left: unset;
   }
 }
 .faq__wrapper {
@@ -2226,6 +2253,8 @@ html {
   height: 51px;
 }
 .invite__button:hover {
+  border: 1px solid #38E7BA;
+  background: #FFF;
   cursor: pointer;
 }
 .invite__image {
